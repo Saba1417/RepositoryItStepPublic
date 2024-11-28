@@ -41,6 +41,7 @@
             }
         }
 
+
         if (new string(guessedWord) == wordToGuess)
         {
             Console.WriteLine($"Congratulations! You guessed the word: {wordToGuess} in {tries} tries");
