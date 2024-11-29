@@ -81,6 +81,13 @@ class Program
             return;
         }
 
+        // Check if a student with the same list number already exists
+        if (students.Any(s => s.ListNumber == listNumber))
+        {
+            Console.WriteLine("A student with this list number already exists.");
+            return;
+        }
+
         Console.Write("Enter grade: ");
         if (!double.TryParse(Console.ReadLine(), out double grade))
         {
